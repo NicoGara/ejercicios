@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <!-- libreria menu hamburguesa -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body data-dark>
+
+    <header data-dark>
+       
+        <h1>Titulo pruebas JS</h1>
+
+        
+    </header>
+
+    <main >
+        <div class="secciones" id="seccion_1">
+            <h3>Reloj Digital y Alarma Sonora</h3>
+            <p id="reloj" class="reloj"></p>
+            <div>
+                <button class="iniciar_reloj">Iniciar Reloj</button>
+                <button class="detener_reloj">Detener Reloj</button>
+                <button class="iniciar_alarma">Iniciar Alarma</button>
+                <button class="detener_alarma">Detener Alarma</button>
+            </div>
+        </div>
+        <div class="secciones" id="seccion_2">
+            <h3>Eventos de teclado</h3>
+            <article class="container_game">
+                <div class="ball"></div>
+            </article>
+        </div>
+        <div class="secciones" id="seccion_3">
+            <h3>Cuenta Regresiva</h3>
+            <div id="countdown"></div>
+        </div>
+        <div class="secciones" id="seccion_4">
+            <h3>Responsive con Java Script</h3>
+            <div id="youtube">
+
+            </div>
+            <div id="gmaps">
+
+            </div>
+        </div>
+        <div class="secciones" id="seccion_5">
+            <h3>Responsive tester</h3>
+
+            <form id="respinsive-tester" class="formulario" action="">
+                <input name="direccion" type="url" placeholder="URL" required>
+                <input name="ancho" placeholder="Ancho" required type="text">
+                <input name="alto" placeholder="Alto" required type="text">
+                <input id="probar" name="probar" type="submit" value="Probar">
+                <button>Cerrar</button>
+            </form>
+        </div>
+        <div class="secciones" id="seccion_6">
+            <h3>Deteccion de dispositivos <br> (User Agent)</h3>
+            <div id="user-device"></div>
+        </div>
+        <div class="secciones" id="seccion_7">
+            <h3>Deteccion de la coneccion</h3>
+        </div>
+        <div class="secciones" id="seccion_8">
+            <h3>Deteccion de la camara Web</h3>
+            <video id="webcam"></video>
+        </div>
+        <div class="secciones" id="seccion_9">Seccion 9</div>
+        <div class="secciones" id="seccion_10">Seccion 10</div>
+    </main>
+
+
+    <div class="container_nav">
+        <a href="#seccion_1"> Reloj Digital y Alarma Sonora</a>
+        <a href="#seccion_2"> Eventos de teclado</a>
+        <a href="#seccion_3"> Cuenta Regresiva</a>
+        <a href="#seccion_4"> Responsive con Java Script</a>
+        <a href="#seccion_5"> Responsive tester</a>
+        <a href="#seccion_6"> Deteccion de dispositivos</a>
+        <a href="#seccion_7"> Deteccion de la coneccion</a>
+        <a href="#seccion_8"> Deteccion de la camara Web</a>
+        <a href="#seccion_9"> Seccion 9</a>
+        <a href="#seccion_10"> Seccion 10</a>
+
+    </div>
+
+    <button class="panel-btn hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <button class="scroll-top-button hidden" type="button">&#11014;</button>
+
+    <button class="dark-theme-btn">🌙</button>
+
+    <script src="/JavaScript/main.js" type="module"></script>
+</body>
+
+
+
+</html>
