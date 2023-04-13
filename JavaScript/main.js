@@ -62,6 +62,9 @@ import responsiveTester from "./dom/prueba_responsive.js"
 import usserDeviceInfo from "./dom/deteccion_dispositivos.js"
 import conection from "./dom/conexion.js"
 import webCam from "./dom/deteccion_webcam.js"
+import getGeolocation from "./dom/geolocalizacion.js"
+import filter from "./dom/filtro.js"
+import raffle from "./dom/sorteo.js"
 
 document.addEventListener("DOMContentLoaded", ()=>{
     reloj(pReloj,".iniciar_reloj",".detener_reloj")
@@ -83,12 +86,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
      webCam("webcam")
 
+     getGeolocation("geolocation")
+
+     filter(".etiqueta","filtro")
+
+     raffle("button_raffle",".lista")
+
     })
     
     
     document.addEventListener("keydown",(e)=>{
         shortcuts(e)
         moveBall(e,".ball",".container_game")
+        
     })
     
     
