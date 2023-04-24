@@ -72,6 +72,7 @@ export default function raffle(btn,selector){
 
 }
 
+
 // pude buscar entre los comentarios de youtube creando la funciion en la consola y ejecutandola de la siguiente manera:
 // getWinner("ytd-comment-thread-renderer #author-text span")
 

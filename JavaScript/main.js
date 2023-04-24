@@ -1,3 +1,10 @@
+const d=document,
+    w=window,
+    n=w.navigator
+
+
+
+
 
 const boton= document.querySelector(".hamburger--collapse")
 
@@ -28,10 +35,13 @@ const navegadores=document.querySelectorAll(".container_nav a")
 
 navegadores.forEach(e => {
     e.addEventListener("click" , ()=>{
+        if (w.innerWidth<=1200) {
         seleccion.style.translate="-100%"
-        boton.className="panel-btn hamburger hamburger--collapse"
+        boton.className="panel-btn hamburger hamburger--collapse" 
+        }
     })
 });
+
 
 
 
@@ -65,6 +75,9 @@ import webCam from "./dom/deteccion_webcam.js"
 import getGeolocation from "./dom/geolocalizacion.js"
 import filter from "./dom/filtro.js"
 import raffle from "./dom/sorteo.js"
+import slider from "./dom/slider.js"
+import scrollSpy from "./dom/scroll_espia.js"
+import { scrollEspia } from "./dom/video_espia.js"
 
 document.addEventListener("DOMContentLoaded", ()=>{
     reloj(pReloj,".iniciar_reloj",".detener_reloj")
@@ -92,6 +105,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
      raffle("button_raffle",".lista")
 
+     slider(".slider-slide",".slider-btns")
+
+     scrollSpy()
+
+     scrollEspia()
     })
     
     

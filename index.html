@@ -23,7 +23,7 @@
     </header>
 
     <main >
-        <div class="secciones" id="seccion_1">
+        <div class="secciones" data-scroll-spy id="seccion_1">
             <h3>Reloj Digital y Alarma Sonora</h3>
             <p id="reloj" class="reloj"></p>
             <div>
@@ -33,17 +33,17 @@
                 <button class="detener_alarma">Detener Alarma</button>
             </div>
         </div>
-        <div class="secciones" id="seccion_2">
+        <div class="secciones" data-scroll-spy id="seccion_2">
             <h3>Eventos de teclado</h3>
             <article class="container_game">
                 <div class="ball"></div>
             </article>
         </div>
-        <div class="secciones" id="seccion_3">
+        <div class="secciones" data-scroll-spy id="seccion_3">
             <h3>Cuenta Regresiva</h3>
             <div id="countdown"></div>
         </div>
-        <div class="secciones" id="seccion_4">
+        <div class="secciones" data-scroll-spy id="seccion_4">
             <h3>Responsive con Java Script</h3>
             <div id="youtube">
 
@@ -52,7 +52,7 @@
 
             </div>
         </div>
-        <div class="secciones" id="seccion_5">
+        <div class="secciones" data-scroll-spy id="seccion_5">
             <h3>Responsive tester</h3>
 
             <form id="respinsive-tester" class="formulario" action="">
@@ -63,23 +63,23 @@
                 <button>Cerrar</button>
             </form>
         </div>
-        <div class="secciones" id="seccion_6">
+        <div class="secciones" data-scroll-spy id="seccion_6">
             <h3>Deteccion de dispositivos <br> (User Agent)</h3>
             <div id="user-device"></div>
         </div>
-        <div class="secciones" id="seccion_7">
+        <div class="secciones" data-scroll-spy id="seccion_7">
             <h3>Deteccion de la coneccion</h3>
         </div>
-        <div class="secciones" id="seccion_8">
+        <div class="secciones" data-scroll-spy id="seccion_8">
             <h3>Deteccion de la camara Web</h3>
             <video id="webcam"></video>
             <p>este ejercicio no lo pude probar porque no tengo camara</p>
         </div>
-        <div class="secciones" id="seccion_9">
+        <div class="secciones" data-scroll-spy id="seccion_9">
             <h3>Geolocalizacion</h3>
             <div id="geolocation"></div>
         </div>
-        <div class="secciones" id="seccion_10">
+        <div class="secciones" data-scroll-spy id="seccion_10">
             <h3>Filtro</h3>
             <input type="search" placeholder="Buscar..." id="filtro" name="filtro">
             <div class="container_filter">
@@ -121,8 +121,8 @@
                 </div>
             </div>
         </div>
-        <div class="secciones" id="seccion_11">
-            <h3>sorteo</h3>
+        <div class="secciones" data-scroll-spy id="seccion_11">
+            <h3>Sorteo</h3>
             <ul >
                 <li class="lista">persona_1</li>
                 <li class="lista">persona_2</li>
@@ -137,37 +137,70 @@
             </ul>
             <button id="button_raffle">Hacer sorteo</button>
         </div>
-        <div class="secciones" id="seccion_12">
+        <div class="secciones" data-scroll-spy id="seccion_12">
+            <h3>Responsive Slider</h3>
+            <div class="slider">
+
+                <div class="slider-slides">
+                    <div class="slider-slide active">
+                        <img src="https://placeimg.com/400/400/animals" alt="animals">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Diapositiva 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus non, fugiat expedita numquam laboriosam! Aliquid quia voluptas minus nesciunt sapiente neque doloremque eum facilis fugit! Expedita vitae ratione placeat.</p>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/400/400/nature" alt="nature">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Diapositiva 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus non, fugiat expedita numquam laboriosam! Aliquid quia voluptas minus nesciunt sapiente neque doloremque eum facilis fugit! Expedita vitae ratione placeat.</p>
+                    </div>                        
+                </div>
+                <div class="slider-btns">
+                    <a href="#" class="prev">&laquo</a>
+                    <a href="#" class="next">&raquo</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="secciones" data-scroll-spy id="seccion_13">
+            <h3>Video Scroll</h3>
+
+            <div class="contenedor-video" >
+                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls></video>
+            </div>
+
+            <div class="contenedor-video" >
+                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls></video>
+            </div>
+
+        </div>
+        <div class="secciones" data-scroll-spy id="seccion_14">
             <h3>seccion</h3>
         </div>
-        <div class="secciones" id="seccion_13">
-            <h3>seccion</h3>
-        </div>
-        <div class="secciones" id="seccion_14">
-            <h3>seccion</h3>
-        </div>
-        <div class="secciones" id="seccion_15">
+        <div class="secciones" data-scroll-spy id="seccion_15">
             <h3>seccion</h3>
         </div>
     </main>
 
 
     <div class="container_nav">
-        <a href="#seccion_1"> Reloj Digital y Alarma Sonora</a>
-        <a href="#seccion_2"> Eventos de teclado</a>
-        <a href="#seccion_3"> Cuenta Regresiva</a>
-        <a href="#seccion_4"> Responsive con Java Script</a>
-        <a href="#seccion_5"> Responsive tester</a>
-        <a href="#seccion_6"> Deteccion de dispositivos</a>
-        <a href="#seccion_7"> Deteccion de la coneccion</a>
-        <a href="#seccion_8"> Deteccion de la camara Web</a>
-        <a href="#seccion_9"> Geolocalizacion</a>
-        <a href="#seccion_10"> Filtro</a>
-        <a href="#seccion_11"> Filtro</a>
-        <a href="#seccion_12"> Filtro</a>
-        <a href="#seccion_13"> Filtro</a>
-        <a href="#seccion_14"> Filtro</a>
-        <a href="#seccion_15"> Filtro</a>
+        <a href="#seccion_1" data-scroll-spy> Reloj Digital y Alarma Sonora</a>
+        <a href="#seccion_2" data-scroll-spy> Eventos de teclado</a>
+        <a href="#seccion_3" data-scroll-spy> Cuenta Regresiva</a>
+        <a href="#seccion_4" data-scroll-spy> Responsive con Java Script</a>
+        <a href="#seccion_5" data-scroll-spy> Responsive tester</a>
+        <a href="#seccion_6" data-scroll-spy> Deteccion de dispositivos</a>
+        <a href="#seccion_7" data-scroll-spy> Deteccion de la coneccion</a>
+        <a href="#seccion_8" data-scroll-spy> Deteccion de la camara Web</a>
+        <a href="#seccion_9" data-scroll-spy> Geolocalizacion</a>
+        <a href="#seccion_10" data-scroll-spy> Filtro</a>
+        <a href="#seccion_11" data-scroll-spy> Sorteo</a>
+        <a href="#seccion_12" data-scroll-spy> Responsive Slider</a>
+        <a href="#seccion_13" data-scroll-spy> Video Scroll</a>
+        <a href="#seccion_14" data-scroll-spy> Filtro</a>
+        <a href="#seccion_15" data-scroll-spy> Filtro</a>
 
     </div>
 
