@@ -421,13 +421,6 @@ main .secciones{
 
 
 
-
-
-
-
-
-
-
 .container_nav::-webkit-scrollbar{
     width: 0;
 } 
@@ -454,14 +447,7 @@ body::-webkit-scrollbar-thumb{
 
 
 
-
-
-/* video espia */
-
-/* .contenedor-video :nth-child(2){
-    
-} */
-
+/* video espia #100 */
 .secciones :nth-child(2).contenedor-video{
     margin-bottom: 100vh;
 }
@@ -484,6 +470,57 @@ body::-webkit-scrollbar-thumb{
 
 
 
+/* formulario #101 */
+/* 
+.formulario_seccion_14{
+    width: 100%;
+    display: flex;
+}
+
+.formulario_grupo{
+    margin: 40px;
+}
+
+.formulario_input#mensaje{
+}
+
+.formulario_grupo_input{
+    width: 100%;
+}
+.formulario_input{
+    font-size: 1.5rem;
+
+    width: 80%;
+}
+
+.formulario_validacion{
+    display: none;
+    color: red;
+}
+
+.formulario_input_error{
+    display: none;
+}
+
+
+
+
+.formulario_boton{
+    font-size: 2rem;
+}
+
+
+.error{
+    border-color: red;
+}
+
+.mostrar{
+    display: initial;
+}
+
+.ocultar{
+    display: none;
+} */
 
 
 
@@ -493,6 +530,153 @@ body::-webkit-scrollbar-thumb{
 
 
 
+
+
+
+
+
+
+
+/* formulario jon mircha: */
+
+
+.formulario_seccion_14{
+    --form-ok-color: #4caf50;
+    --form-error-color:#f44336;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.formulario_seccion_14 input,
+.formulario_seccion_14 textarea{
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+
+.formulario_seccion_14 textarea{
+    resize: none;
+}
+
+.formulario_texto_exito, 
+.formulario_seccion_14 legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 50px;
+}
+
+
+.formulario_seccion_14 input, 
+.formulario_seccion_14 textarea{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+.formulario_boton{
+    width: 50%;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.formulario_seccion_14 *::placeholder{
+    color: black;
+}
+
+.formulario_seccion_14 [required]:valid{
+    border: thin solid var(--form-ok-color);
+}
+
+.formulario_seccion_14 [required]:invalid{
+    border: thin solid var(--form-error-color);
+}
+
+.contact-form-error{
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none{
+    display: none;
+}
+
+
+@keyframes show-message {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* narrador #jonmircha103 */
+
+.secciones#seccion_15{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.secciones#seccion_15 select,
+.secciones#seccion_15 textarea{
+    margin: 20px auto;
+    width: 80%;
+}
+
+.secciones#seccion_15 button{
+    margin: 20px auto;
+    width: 100px;
+}
 
 
 

@@ -78,6 +78,8 @@ import raffle from "./dom/sorteo.js"
 import slider from "./dom/slider.js"
 import scrollSpy from "./dom/scroll_espia.js"
 import { scrollEspia } from "./dom/video_espia.js"
+import validacionFormulario from "./dom/formulario.js"
+import speechReader from "./dom/narrador.js"
 
 document.addEventListener("DOMContentLoaded", ()=>{
     reloj(pReloj,".iniciar_reloj",".detener_reloj")
@@ -99,7 +101,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
      webCam("webcam")
 
-     getGeolocation("geolocation")
+    //  getGeolocation("geolocation")
 
      filter(".etiqueta","filtro")
 
@@ -110,6 +112,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
      scrollSpy()
 
      scrollEspia()
+
+     validacionFormulario()
+
     })
     
     
@@ -126,7 +131,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     conection()
 
 
-
+    speechReader()
 
 
 

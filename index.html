@@ -168,19 +168,62 @@
             <h3>Video Scroll</h3>
 
             <div class="contenedor-video" >
-                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls></video>
+                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls muted></video>
             </div>
 
             <div class="contenedor-video" >
-                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls></video>
+                <video data-video-espia src="assets/video/video_demostracion.mp4" class="video-espia" controls muted></video>
             </div>
 
         </div>
         <div class="secciones" data-scroll-spy id="seccion_14">
-            <h3>seccion</h3>
+            <h3>Formulario</h3>
+            <form class="formulario_seccion_14" action="https://formsubmit.co/nicolasgaravaglia@hotmail.com" method="POST" target="_blank">
+
+                <legend>Envianos tus comentarios</legend>
+
+                <!-- nombre y apellido -->
+                <input type="text" name="nombre" placeholder="Escribe tu Nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                
+                
+                
+                
+                <!-- Email -->
+                <input type="email" class="formulario_input" name="email"  placeholder="Escribe tu correo" required title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+
+
+
+                <!-- titulo  -->
+                <input  type="titulo" class="formulario_input" name="titulo" placeholder="Titulo" required title="El asunto es requerido">
+
+
+                <!-- mensaje  -->
+                <textarea type="mensaje" class="formulario_input" name="mensaje" placeholder="Mensaje" cols="30" rows="10" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required></textarea>
+
+                
+                
+                
+                
+                
+                <!-- mensaje de confirmacion -->
+                <button type="submit" class="formulario_boton">Enviar</button>
+
+                <p class="contact-form-response none" id="formulario_texto_exito">formulario enviado de manera correcta</p>
+
+                <img class="contact-form-loader none" src="assets/otros/loader/spinning-circles.svg" />
+
+            </form>
+                
         </div>
         <div class="secciones" data-scroll-spy id="seccion_15">
-            <h3>seccion</h3>
+            <h3>Narrador</h3>
+            <select name="selector-voz" data-select-speech >
+                <option value="">--- Elige una voz</option>
+            </select>
+
+            <textarea name="texto-leer"  cols="30" rows="10" placeholder="Incorpore el texto a leer" data-area-narrador></textarea>
+
+            <button name="boton-narrador" data-boton-narrador >Escuchar</button>
         </div>
     </main>
 
@@ -199,8 +242,8 @@
         <a href="#seccion_11" data-scroll-spy> Sorteo</a>
         <a href="#seccion_12" data-scroll-spy> Responsive Slider</a>
         <a href="#seccion_13" data-scroll-spy> Video Scroll</a>
-        <a href="#seccion_14" data-scroll-spy> Filtro</a>
-        <a href="#seccion_15" data-scroll-spy> Filtro</a>
+        <a href="#seccion_14" data-scroll-spy> Formulario</a>
+        <a href="#seccion_15" data-scroll-spy> Narrador</a>
 
     </div>
 
